@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-thorhammer-dev-160957-authRole",
+      "UnauthRoleArn": "arn:aws:iam::953172829400:role/amplify-thorhammer-dev-160957-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::953172829400:role/amplify-thorhammer-dev-160957-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-thorhammer-dev-160957-deployment",
+      "UnauthRoleName": "amplify-thorhammer-dev-160957-unauthRole",
+      "StackName": "amplify-thorhammer-dev-160957",
+      "StackId": "arn:aws:cloudformation:us-east-1:953172829400:stack/amplify-thorhammer-dev-160957/24c49830-7df7-11eb-afff-12d63bc7967b",
+      "AmplifyAppId": "d2afolhcdn1k98"
+    },
+    "categories": {
+      "auth": {
+        "thorhammer252f9e32": {}
+      }
+    }
+  }
+}
