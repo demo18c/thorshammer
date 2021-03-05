@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import CssBaseline from "@material-ui/core/CssBaseline";
+import Appbar from "./components/Appbar.js";
+import Routes from "./routes/index";
+import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
+
+const App = () => {
+    const palletType = "dark";
+    const darkTheme = createMuiTheme({
+        palette: {
+            type: palletType,
+        },
+    });
+
+    return (
+        <ThemeProvider theme={darkTheme}>
+            <>
+                {/* <CssBaseline /> */}
+                <Appbar />
+                <Routes />
+            </>
+        </ThemeProvider>
+    );
+};
 
 export default App;
